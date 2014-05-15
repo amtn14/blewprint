@@ -1,0 +1,74 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Blewprint.</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li> 
+        <li><a href="/research">Why Interior Design Matters</a></li> 
+      <% if user_signed_in? %>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+      <% end %> 
+    </ul>
+
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="page-header">
+  <h1>Why the Interior Design of Your Space Matters:</h1>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4"><img class="img-responsive" src="http://drawinghand.files.wordpress.com/2013/05/tamarind-hills.jpg"/>
+ <br>
+<center>The process of interior design goes beyond expressing our personalities and who we are. Our homes are often a place we think of for comfort and relaxation. However, these same qualities are not always found in the environment of our workspace--which is often the second place that people spend most of their time in. The environment we're in, regardless of our classroom, office space, study lounges, or dining areas have shown to affect our moods, behaviors, productivity and creativity.  
+</center></div>
+
+  <div class="col-md-4">
+  	<br>
+  	<center>
+  	If one breaks this down, what is really being affected are the aspects of efficiency and creativity from our employees, our students, and it has the potential to hinder interactions and relationship in a given space. The additional step in creating and considering for an environment that is comforting for yourself and your peers, will lead to greater distance of achievements collectively. </center>
+	<br>
+	<br>
+	<img class="img-responsive" src="http://2.bp.blogspot.com/-oqacQxQ_flU/TaFzCNy2nZI/AAAAAAAACMA/rOKOlnBXNT0/s1600/Interior-Design-Sketches.jpg"/></div>
+
+  <div class="col-md-4"><img class="img-responsive" src="http://media-cache-ec0.pinimg.com/736x/41/00/d5/4100d5c22fe4566573617ea21b45df51.jpg"/></div>
+  <br>
+  <div class="col-md-4">
+  Provided below is a summarized list of interior design elements to assist you. (Source: Rachael Park and Brian Kowalchuk, Directors at HDR Architecture, Inc.) 
+  <br>
+  <br>
+  <ul>
+  <li> <b>Individual:</b> Furniture, Techology (telephone, PC), Environment (natural light, artificial light, Ambient environment, privacy levels (acoustic and visual)</li>
+
+  <li><b>Team:</b> Furniture, Technology (web meeting, video conference), Collaborative areas (formal and informal), Storage and Reference, Work Zones (office, laboratory, etc)</li>
+
+  <li><b>Floor:</b> Shared adminstrative areas (fax, copier, printer), Pantry/coffee and tea bar, Meeting spaces (distributed and varied in size and quanitity)</li>
+
+  <li><b>Building:</b> Food services (cafe, lunch room, grab-and-go), conference center, internal shopping mall (convenience store)</li>
+
+  <li><b>Campus:</b> Cafeteria/restaurant, sports center, social hall, innovation center</li>
+</ul>
+</div>
+
+
+
