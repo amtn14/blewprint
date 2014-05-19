@@ -1,0 +1,166 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Blewprint</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+         <ul class="nav navbar-nav">
+          <li class="active">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li> 
+
+
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" title="Click below on Stage One! :)">Start One!</a></li>
+            <li><a href="/Stage_One">Stage 1: Show Us Your Space</a></li>
+            <li><a href="/Stage_Two">Stage 2: Unleash Your Creativity</a></li>
+            <li><a href="/Stage_Three">Stage 3: Find Your Supplies</a></li>
+            <li class="divider"></li>
+            <li><a href="/Share">Share your Progress</a></li>
+          </ul>
+        </li>
+    </ul>
+
+        <li><a href="/research">Why Interior Design Matters</a></li> 
+      <% if user_signed_in? %>
+        <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <li><%= link_to "Sign In", new_user_session_path %></li>
+      <% end %> 
+    </ul>
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- /container -->
+<!-- Carousel==================================================-->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+</ol>
+<div class="carousel-inner">
+    <div class="item active">
+       <a href="http://tinypic.com?ref=2n9ajph" target="_blank"><img src="http://i62.tinypic.com/2n9ajph.jpg" border="0"></a>
+        <div class="container">
+            <div class="carousel-caption">
+                 <h3 class="">Let us help start your project today.</h3>
+
+                <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses=""
+                the="" bootstrap="" 3="" styles.<="" small="">
+                    <p class=""></p>
+                </pthis>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <a href="http://tinypic.com?ref=2ebyhp3" target="_blank"><img src="http://i61.tinypic.com/2ebyhp3.jpg" border="0"></a>
+        <h3 class="">Browse and share your ideas and creativity.</h3>
+        <div class="container">
+            <div class="carousel-caption">
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <a href="http://tinypic.com?ref=3444k9j" target="_blank"><img src="http://i57.tinypic.com/3444k9j.jpg" border="0"></a>
+        <div class="container">
+            <div class="carousel-caption">
+                 <h3 class="">Create a <i>blewprint</i> to guide you through your design and planning.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+ <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a> 
+</div>
+<!-- /.carousel -->
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>Show Us Your Space</h2>
+      <p>Take a picture of your space and upload it through our mobile app.</p>
+      <p><a class="btn btn-default" href="#">Click to Upload Here »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>Unleash Your Creativity</h2>
+      <p>Browse through and interact with your ideas.</p>
+      <p><a class="btn btn-default" href="#">Begin Here »</a></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-circle" src="http://placehold.it/140x140">
+      <h2>Find Your Supplies and Tools</h2>
+      <p>We'll help you find the nearest locations to get the tools and supplies you need to start your project.</p>
+      <p><a class="btn btn-default" href="#">Find and Locate »</a></p>
+    </div>
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
+    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="featurette">
+    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>This Bootstrap layout is compliments of Bootply. · <a href="http://www.bootply.com/62603">Edit on Bootply.com</a></p>
+  </footer>
+
+</div><!-- /.container -->

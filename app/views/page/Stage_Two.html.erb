@@ -14,51 +14,41 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-      	 <ul class="nav navbar-nav">
-      	  <li class="active">
+         <ul class="nav navbar-nav">
+          <li class="active">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li> 
 
-		  <li class="dropdown">
-<<<<<<< HEAD
-          <a href="#" class="dropdown-toggle" id="dLabel" data-toggle="dropdown">Projects<b class="caret"></b></a>
-          <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
-            <li><a href="#">Start one!</a></li>
-            <li><a href="#">Stage 1: Show Us Your Space</a></li>
-            <li><a href="#">Stage 2: Unleash Your Creativity</a></li>
-            <li><a href="#">Stage 3: Find Your Supplies</a></li>
-=======
+
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#" title="Click below on Stage One! :)">Start One!</a></li>
             <li><a href="/Stage_One">Stage 1: Show Us Your Space</a></li>
             <li><a href="/Stage_Two">Stage 2: Unleash Your Creativity</a></li>
             <li><a href="/Stage_Three">Stage 3: Find Your Supplies</a></li>
->>>>>>> db5ff07eb4085a9176fc5839bc06bb85e73dbf52
             <li class="divider"></li>
             <li><a href="/Share">Share your Progress</a></li>
           </ul>
         </li>
     </ul>
+
         <li><a href="/research">Why Interior Design Matters</a></li> 
       <% if user_signed_in? %>
+        <li><%= link_to "Account Settings", edit_user_registration_path %></li>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
         <li><%= link_to "Sign In", new_user_session_path %></li>
       <% end %> 
     </ul>
+
+        </li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+    <!-- /container -->
 
-<div class="jumbotron">
 
-  <h1>What We're All About:</h1>
-  <p> Blewprint aims to provide a visual illustration of the creative ideas and visions that you have for your new space. The process of selecting from long lists of different color shades, textures, furniture, ways of storage space (and etc.) can be overwhelming. With our partnerships with Pinterest and other crafts-oriented sites, we hope to bring to you fresh ideas that can assist you in creating, visualizing, developing, and sharing the projects you choose to take on--making your designing and remodeling process that much smoother. 
-<br>
-<br>
-</p>
-  <p><a href="/users/sign_up" class="btn btn-warning btn-lg active" role="button">Try Us Out!</a></p>
-
-</div>
+    in progress.

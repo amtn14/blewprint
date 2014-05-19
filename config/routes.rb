@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  get '/Share' => 'page#Share'
+  get '/Stage_Three' => 'page#Stage_Three'
+  get '/Stage_Two' => 'page#Stage_Two'
+  get '/Stage_One' => 'page#Stage_One'
   get '/research' => 'page#research'
   get'/about' => 'page#about'
   root 'page#index'
