@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
+  get '/storage' => 'page#storage'
+  get '/tips' => 'page#tips'
   get '/Upload' => 'page#Upload'
   get '/Share' => 'page#Share'
   get '/Stage_Three' => 'page#Stage_Three'
