@@ -8,31 +8,32 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Blewprint.</a>
+      <a class="navbar-brand" href="#">Blewprint</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+         <ul class="nav navbar-nav">
+          <li class="active">
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li> 
-
-
-            <li class="dropdown">
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
-          
           <ul class="dropdown-menu">
-            <li><a href="#">Start one!</a></li>
-            <li><a href="#">Stage 1: Show Us Your Space</a></li>
-            <li><a href="#">Stage 2: Unleash Your Creativity</a></li>
-            <li><a href="#">Stage 3: Find Your Supplies</a></li>
+            <li><a href="#" title="Click below on Stage One! :)">Start One!</a></li>
+            <li><a href="/Stage_One">Stage 1: Show Us Your Space</a></li>
+            <li><a href="/Stage_Two">Stage 2: Unleash Your Creativity</a></li>
+            <li><a href="/Stage_Three">Stage 3: Find Your Supplies</a></li>
             <li class="divider"></li>
-            <li><a href="#">Share your Progress</a></li>
+            <li><a href="/Share">Share your Progress</a></li>
           </ul>
         </li>
+    </ul>
 
         <li><a href="/research">Why Interior Design Matters</a></li> 
       <% if user_signed_in? %>
+        <li><%= link_to "Account Settings", edit_user_registration_path %></li>
         <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
@@ -40,7 +41,6 @@
       <% end %> 
     </ul>
 
-          </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -54,7 +54,7 @@
 </div>
 <br>
 <div class="row">
-  <div class="col-md-4"><img class="img-responsive" src="http://drawinghand.files.wordpress.com/2013/05/tamarind-hills.jpg"/>
+  <div class="col-md-4"><img class="img-responsive" src="http://drawinghand.files.wordpress.com/2013/05/tamarind-hills.jpg" height="375" width="400"/>
  <br>
 <center>The process of interior design goes beyond expressing our personalities and who we are. Our homes are often a place we think of for comfort and relaxation. However, these same qualities are not always found in the environment of our workspace--which is often the second place that people spend most of their time in. The environment we're in, regardless of our classroom, office space, study lounges, or dining areas have shown to affect our moods, behaviors, productivity and creativity.  
 </center></div>
@@ -67,9 +67,9 @@
      Provided next is a list of interior design elements to assist you.(Source: Rachael Park and Brian Kowalchuk, Directors at HDR Architecture, Inc.)  </center>
 	<br>
 	<br>
-	<img class="img-responsive" src="http://2.bp.blogspot.com/-oqacQxQ_flU/TaFzCNy2nZI/AAAAAAAACMA/rOKOlnBXNT0/s1600/Interior-Design-Sketches.jpg"/></div>
+	<img class="img-responsive" src="http://2.bp.blogspot.com/-oqacQxQ_flU/TaFzCNy2nZI/AAAAAAAACMA/rOKOlnBXNT0/s1600/Interior-Design-Sketches.jpg" height="375" width="400"/></div>
 
-  <div class="col-md-4"><img class="img-responsive" src="http://media-cache-ec0.pinimg.com/736x/41/00/d5/4100d5c22fe4566573617ea21b45df51.jpg"/></div>
+  <div class="col-md-4"><img class="img-responsive" src="http://media-cache-ec0.pinimg.com/736x/41/00/d5/4100d5c22fe4566573617ea21b45df51.jpg" height="375" width="400"/></div>
   <br>
   <div class="col-md-4">
   <br>
